@@ -1,0 +1,7 @@
+{iscript:
+load {iv} m
+invert m
+mirrorleft m
+mirrortop m
+speed m 2
+}

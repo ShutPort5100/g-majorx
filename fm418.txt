@@ -1,0 +1,17 @@
+{iscript:
+load {iv} a
+copy a b
+get a width w
+get a height h
+distort a barrel 0.5 0 0.5 0.5
+audiopitch a 1.418
+skew b -45
+resize b w h
+hueshifthsv b 200 150
+audiopitch b 0.4292025
+overlay a b 0 0 0,0,0 0.1 0.1
+invert a
+volume a 8
+bitrate a 600000 24000
+render a
+}

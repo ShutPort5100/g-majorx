@@ -1,0 +1,12 @@
+{iscript:
+load {iv} m
+gold m
+brightness m 50
+rain m
+copy m m2
+audiopitch m 0.5937
+audiopitch m2 0.4
+audioputmix m m2
+volume m 2
+render m
+}

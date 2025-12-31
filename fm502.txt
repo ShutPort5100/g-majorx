@@ -1,0 +1,13 @@
+{iscript:
+load {iv} i
+rain i
+invert i
+swirl i 60
+explode i 0.4
+audiopitch i 0.22
+copy i i2
+audiopitch i2 1.4
+audioputmix i i2
+volume i 2
+render i
+}

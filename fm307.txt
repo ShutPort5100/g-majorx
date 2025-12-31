@@ -1,0 +1,35 @@
+destroy autotune=https://obsc.tixte.co/r/bytebeat.wav, sat=256, huec=4 {set:0|{iscripturl:
+load {iv} m
+convert m audio/mp3
+}}
+{set:1|{iscripturl:
+load {iv} m
+trace m
+sharpen m 10
+}}
+{set:2|{iscripturl:
+load {get:1} m
+copy m m2
+copy m m3
+copy m ma
+slide m2 1
+slide m3 1 up
+invert m3
+overlay m2 m3 0 0 none 0.01 1 true 50
+huecurvergba m2 all 1 0 1
+invert m2
+recolor m
+overlay m m2 0 0 none 0.01 1 true 50
+huecurvergba m all 1 0 1
+}}
+{iscript:
+load {get:2} m
+load {get:0} ma
+copy m m4
+rotate m4 180
+invert m4
+recolor m4
+overlay m m4 0 0 none 0.01 1 true 50
+huecurvergba m all 1 0 1
+audioputreplace m ma
+}

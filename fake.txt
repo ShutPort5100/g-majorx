@@ -1,0 +1,10 @@
+{iscript:
+load {iv} m
+invert m
+copy m m2
+copy m m3
+audiopitch m2
+audiopitch m3 0.5
+audioputmix m m2
+audioputmix m m3
+}

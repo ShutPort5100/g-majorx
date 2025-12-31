@@ -1,0 +1,23 @@
+{iscript: load {iv} m
+hueshifthsv m 180 60 30
+brightness m 15
+contrast m 1
+invert m
+volume m 0.333
+copy m m2
+copy m m3
+copy m m4
+audiopitch m 0.5
+volume m 4
+audiopitch m2 0.749154
+volume m2 4
+audiopitch m3 1
+volume m3 2
+audiopitch m4 1.498307
+volume m4 1
+audioputmix m m2
+audioputmix m m3
+audioputmix m m4
+volume m 6
+render m
+}

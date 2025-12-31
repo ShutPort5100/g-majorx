@@ -1,0 +1,47 @@
+{iscript:
+load {iv} m
+hueshifthsv m -90
+flop m
+copy m m2
+get m width w 
+get m height h
+crop m w/2 h
+flop m2
+crop m2 w/2 h
+invert m2
+flop m2
+volume m2 0
+crop m2 w h
+join m m2
+swirl m -100
+copy m m2
+get m width w 
+get m height h
+crop m w/2 h
+flop m2
+crop m2 w/2 h
+invert m2
+flop m2
+volume m2 0
+crop m2 w h
+join m m2
+volume m 0.333
+copy m m2
+copy m m3
+copy m m4
+audiopitch m 0.64842
+volume m 6
+audiopitch m2 1.29684
+volume m2 6
+audiopitch m3 2
+audiopitch m3 1.090508
+volume m3 1.5
+audiopitch m4 2
+audiopitch m4 1.29684
+volume m4 1.5
+audioputmix m m2
+audioputmix m m3
+audioputmix m m4
+volume m 8
+render m
+}

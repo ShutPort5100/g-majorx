@@ -1,0 +1,21 @@
+{iscript: load {iv} m
+hueshifthsv m 86 100
+copy m m2
+copy m m3
+copy m m4
+copy m m5
+copy m m6
+audiopitch m 0.5
+audiopitch m2 0.749154
+audiopitch m4 1.122462
+audiopitch m5 1.259921
+audiopitch m6 2
+audioputmix m m2
+audioputmix m3 m4
+audioputmix m5 m6
+audioputmix m m3
+volume m 2.25
+volume m5 1.5
+audioputmix m m5
+volume m 1.5
+}

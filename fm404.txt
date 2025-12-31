@@ -1,0 +1,16 @@
+{mscript:
+load {iv} bg
+huecurvergba bg all 0 1 0
+invert bg
+copy bg oil
+invert bg
+crop oil bgw bgh 0 bgh/2
+overlay bg oil bgw-oilw bgh-oilh 255,255,255 0.3 0.1
+copy bg m2
+audiopitch m2 1.44
+audioputmix bg m2
+copy bg m3
+audiopitch m3 1.2
+audioputmix bg m3
+volume bg 3
+}
