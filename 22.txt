@@ -1,0 +1,9 @@
+umb autotune=https://www.youtube.com/watch?v=52k-8nKko-M, pitch=-20, er=8 {iscript:
+load {iv} m
+shake m 25 25 true
+invert m
+hueshifthsv m 180
+zoom m 1.175
+audioboostbass m
+render m
+}

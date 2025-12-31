@@ -1,0 +1,9 @@
+{iscript: load {iv} m
+copy m m2
+invertrgba m 0 1 1
+audiopitch m 1
+audiopitch m2 1.2599210498948732
+audioputmix m m2
+volume m 2
+render m
+}

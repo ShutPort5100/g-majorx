@@ -1,0 +1,11 @@
+{iscript:
+load {iv} i
+haah i
+explode i
+hueshifthsv i -120
+copy i i2
+audiopitch i2 1.2
+audioputmix i i2
+volume i 1.5
+render i
+}

@@ -1,0 +1,18 @@
+{iscript:
+load {iv} a
+get a width w
+get a height h
+copy a b
+audiopitch b 0.86956
+mirrorright a
+stretch a 1 h/w true
+swirl a -90
+stretch a 1 w/h true
+rotate a -90
+waves a 10 w/10 1
+rotate a 90
+invert a
+hueshifthsv a 85
+audioputmix a b
+cover a w h
+}

@@ -1,0 +1,6 @@
+{iscript:
+load {iv} i
+swirl i 180
+darken i 25
+audiopitch i 0.85
+}

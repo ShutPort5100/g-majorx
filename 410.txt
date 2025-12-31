@@ -1,0 +1,19 @@
+{iscript:
+load {iv} m
+resize m 640 360
+invert m
+hueshifthsv m 180
+swaprgba m bgra
+flip m
+wave m 50 300
+flip m
+copy m m2
+audiopitch m 1.25
+audiopitch m2 2
+audioputmix m m2
+volume m 2
+get m width w
+get m height h
+crop m w h-108 0 48
+render m
+}

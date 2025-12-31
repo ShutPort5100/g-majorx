@@ -1,0 +1,22 @@
+{iscript:
+load {iv} 1
+hueshifthsv 1 330
+get 1 width w
+get 1 height h
+rotate 1 90
+waves 1
+waves 1 16 125  5
+waves 1 5 200 10
+waves 1 2.5 16 5.25
+waves 1 5 50 10
+rotate 1 -90
+cover 1 w h
+copy 1 2
+audiopitch 1 0.5
+audioputmix 1 2
+copy 1 3
+audiopitch 3 1.02
+audioputmix 1 3
+volume 3
+render 1
+}

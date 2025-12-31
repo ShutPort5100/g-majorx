@@ -1,0 +1,13 @@
+{iscript:
+load {iv} i
+get i width w 
+get i height h 
+lighten i 50
+copy i i2 
+audiopitch i2 1.189207
+copy i i3
+audiopitch i3 0.793701
+audioputmix i2 i3
+audioputmix i i2
+render i 
+}

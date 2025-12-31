@@ -1,0 +1,19 @@
+without the equalizer because literally impossible {iscript:
+load {iv} m
+copy m m2
+copy m m3
+hueshifthsv m 270
+rotate m -90
+waves m 11 120 2
+rotate m 90
+explode m 0.5
+invert m
+pixelate m 6 true
+audiopitch m 0.8
+audiopitch m3 1.33
+audioputmix m2 m3
+volume m2 2
+audioputmix m m2
+volume m 3
+render m
+}

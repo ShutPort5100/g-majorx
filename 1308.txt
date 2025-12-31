@@ -1,0 +1,13 @@
+{iscript:
+load {iv} i
+hueshifthsv i 122
+invert i
+recolor i
+copy i i2
+audiopitch i 0.8909
+audiopitch i2 1.05946
+volume i 2
+volume i2 2
+audioputmix i i2
+render i
+}

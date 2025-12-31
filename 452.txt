@@ -1,0 +1,15 @@
+{iscript:
+load {iv} a
+copy a b
+convert b audio/mp3
+hueshifthsv a 90 200
+copy b c
+copy b d
+audiopitch b 1.88775
+audiopitch c 1.18921
+audiopitch d 0.70711
+audioputmix c d
+audioputmix a b
+audioputmix a c
+volume a 4
+}

@@ -1,0 +1,9 @@
+{iscript:
+load {iv} a
+flip a
+swaprgba a bgra
+copy a b
+audiopitch a 0.97153
+audiopitch b 1.15535
+audioputmix a b
+}

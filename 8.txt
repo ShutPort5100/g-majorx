@@ -1,0 +1,9 @@
+{iscript:
+load {iv} i
+copy i i2
+deepfry i
+invert i
+hueshifthsv i 180 0 0
+audiopitch i2 0.6674199270850172
+audioputmix i i2
+}

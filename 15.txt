@@ -1,0 +1,15 @@
+{iscript:
+load {iv} g
+wave g 18 138
+copy g g2
+audiopitch g 1
+audiopitch g2 1.33348398541700344
+audioputmix g g2
+get g width w
+get g height h
+crop g w h-36 0 18
+volume g2 2
+audiodestroy g
+audiodestroy g2
+render g
+}

@@ -1,0 +1,8 @@
+{iscript:
+load {iv} m
+lighten m 9
+huecurvergba m all 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+hueshifthsv m 180
+audiopitch m 2
+audiopitch m 1.25
+}

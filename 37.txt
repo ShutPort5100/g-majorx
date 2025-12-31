@@ -1,0 +1,5 @@
+{iscript:
+load {iv} i
+invert i
+audiopitch i 1.96078
+}

@@ -1,0 +1,9 @@
+{iscript:
+load {iv} m
+flip m
+flop m
+speed m .5
+speed m .5
+audiopitch m .25
+snip m 0 md/4
+}

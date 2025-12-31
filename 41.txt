@@ -1,0 +1,13 @@
+{iscript:
+load {iv} m
+copy m m2
+copy m m3
+darken m 10
+huecurvergba m all 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+audiopitch m2 1.05263
+audiopitch m3 1.25
+audioputmix m m3
+audioputmix m m2
+volume m 2
+render m
+}

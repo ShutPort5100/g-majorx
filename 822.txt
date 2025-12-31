@@ -1,0 +1,33 @@
+{iscript:
+load {iv} b
+swaprgba b bgra
+hueshifthsv b 180
+invert b
+mirrorright b
+implode b 0.5
+copy b a
+convert a audio/wav
+
+copy a a2
+copy a a3
+copy a a4
+copy a a5
+copy a a6
+copy a a7
+audiopitch a2 0.5
+audiopitch a3 0.66742
+audiopitch a4 0.7937
+audiopitch a5 1.18921
+audiopitch a6 1.5874
+audiopitch a7 2
+
+audioputmix a a2
+audioputmix a3 a4
+audioputmix a5 a6
+audioputmix a a3
+audioputmix a5 a7
+audioputmix a a5
+volume a 4
+
+audioputreplace b a
+}

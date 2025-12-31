@@ -1,0 +1,13 @@
+{iscript:
+load {iv} i
+copy i i2
+copy i i3
+invert i
+huecurvergba i all 1 0 1
+audiopitch i 0.8909
+audiopitch i3 1.49831
+audioputmix i i3
+audioputmix i i2
+volume i 2
+render i
+}

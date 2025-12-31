@@ -1,0 +1,18 @@
+{iscript:
+load {iv} i
+grayscale i
+huecurvergba i red 0 0 0 0
+huecurvergba i green 0 1 0 0
+huecurvergba i blue 0 1 1 0
+swirl i -120
+copy i i2
+copy i i3
+audiopitch i2 1.40
+audiopitch i3 0.84
+volume i3 2
+volume i 2
+volume i2 2
+audioputmix i i2
+audioputmix i i3
+render i
+}

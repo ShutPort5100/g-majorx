@@ -1,0 +1,27 @@
+{iscript:
+load {iv} a
+contrast a -1
+swirl a -360
+swirl a -100
+get a width w
+get a height h
+rotate a 90
+waves a
+waves a 16 125  5
+waves a 5 200 10
+waves a 2.5 16 5.25
+waves a 5 50 10
+rotate a 270
+cover a w h
+swirl a 360
+swirl a 100
+copy a a2
+copy a a3
+copy a a4
+audiopitch a2 1.25992
+audiopitch a3 1.49831
+audiopitch a4 1.68179
+audioputmix a a2
+audioputmix a a3
+audioputmix a a4
+}

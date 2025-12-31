@@ -1,0 +1,9 @@
+umb autotune=https://viva.tixte.co/r/cl.mp3 >> wub=50|wub=10, er=1.3
+{iscript:
+load {iv} a
+grayscale a
+huecurvergba a red 0 1 1
+huecurvergba a green 0 0 1
+huecurvergba a blue 0 0 0
+mirrorleft a
+}

@@ -1,0 +1,10 @@
+{iscript:
+load {iv} m
+invert m
+copy m m2
+audiopitch m 1
+audiopitch m2 1.189
+volume m2 2
+audioputmix m m2
+render m
+}

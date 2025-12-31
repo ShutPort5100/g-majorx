@@ -1,0 +1,23 @@
+{iscript:
+load {iv} m
+get m width w
+get m height h
+copy m m2
+swaprgba m bgra
+hueshifthsv m 90
+rotate m 90
+waves m
+waves m 16 125  5
+waves m 5 200 10
+waves m 2.5 16 5.25
+waves m 5 50 10
+rotate m 270
+cover m w h
+audiopitch m2 0.5
+audioputmix m m2
+copy m m3
+audiopitch m3 1.01748
+audioputmix m m3
+volume m 2
+render m
+}

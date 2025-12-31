@@ -1,0 +1,15 @@
+{iscript:
+load {iv} a
+hueshifthsv a 18 200
+invert a
+copy a b
+copy a c
+copy a d
+audiopitch b 0.8409
+audiopitch c 1.1224
+audiopitch d 1.2599
+audioputmix a b
+audioputmix c d
+audioputmix a c
+volume a 4
+}

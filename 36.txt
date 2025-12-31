@@ -1,0 +1,28 @@
+{iscript:
+load {iv} a
+copy a a2
+copy a a3
+copy a a4
+copy a a5
+rotate a 90
+waves a
+waves a 3 125 5
+waves a 2 200 10
+waves a 1 16 5.25
+waves a 2 50 10
+rotate a 270
+grayscale a
+huecurvergba a red 0.71 0.67 0.62 0.56 0.50 0.44 0.39 0.35 0.47 0.76 1
+huecurvergba a green 0.48 0.45 0.41 0.37 0.32 0.27 0.24 0.22 0.38 0.71 1
+huecurvergba a blue 0 0 0 0 0 0 0 0 0.24 0.65 1
+audiopitch a2 1.33
+audiopitch a3 1.11
+audiopitch a4 0.83333
+audiopitch a5 0.625
+audioputmix a a2
+audioputmix a3 a4
+audioputmix a3 a5
+audioputmix a a3
+volume a 6
+render a
+}

@@ -1,0 +1,35 @@
+{iscript:
+load {iv} i
+load https://cdn.discordapp.com/attachments/545387186816548874/1385725724908064808/image.png?ex=68571d26&is=6855cba6&hm=fd97bf30b5534ccf2d636e67193221de5ccd33f7c550ba793eedf0c9ea080155& v
+get i width w 
+get i height h
+copy i i2
+copy i i3
+rotate i -90
+waves i w/60 w/4 6
+flop i
+waves i w/70 w/6 4
+flop i
+waves i w/110 w/12 6
+flop i 
+waves i w/100 w/4 7
+waves i w/200 w/20 3
+flop i
+waves i w/250 w/1 5
+rotate i 90
+rotate i 90
+waves i w/300 w/2 10
+rotate i -90
+cover i w h
+invert i
+flop i
+swaprgba i bgr
+resize v w h
+overlay i v
+audiopitch i 1.259
+audiopitch i2 1.334
+audiopitch i3 1.414
+audioputmix i i2
+audioputmix i i3
+render i
+}

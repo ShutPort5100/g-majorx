@@ -1,0 +1,14 @@
+{iscript:
+load {iv} i
+hueshifthsv i 252 0 0
+contrast i -1
+explode i 1.50
+mirrorleft i
+copy i i2
+copy i i3
+audiopitch i 1.5874
+audiopitch i2 1.12246
+audiopitch i3 0.70711
+audioputmix i i2
+audioputmix i i3
+}

@@ -1,0 +1,11 @@
+{iscript:
+load {iv} m1
+audiopitch m1 2
+hueshifthsv m1 25
+resize m1 854 480
+wave m1 18 138
+get m1 width w
+get m1 height h
+crop m1 w h-36 0 18
+render m1
+}

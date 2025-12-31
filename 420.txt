@@ -1,0 +1,13 @@
+{iscript:
+load {iv} a
+invert a
+huecurvergba a red 0 0.1 0.2 1
+huecurvergba a all 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0.3 0.5 0.7 0.9 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+copy a b
+copy a c
+audiopitch b 1.41421
+audiopitch c 0.70711
+audioputmix b c
+audioputmix a b
+volume a 20
+}

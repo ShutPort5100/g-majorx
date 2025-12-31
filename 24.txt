@@ -1,0 +1,29 @@
+{iscript:
+create canvas 720 480
+load https://cdn.discordapp.com/attachments/1326073455149453352/1370187480531472414/Image180.png?ex=681e9608&is=681d4488&hm=c950c64fc58e166ea83226a0557626530f20aabe7a4a27a1512b5e2a91932cda& dice
+load {iv} i
+copy i i2
+copy i i3
+audiopitch i 0.8909
+audiopitch i2 1.18921
+audiopitch i3 1.33484
+volume i3 0.75
+audioputmix i i2
+audioputmix i i3
+volume i 3
+wave i 18 138
+mirrorright i
+invert i
+get dice width w
+get dice height h
+get i width wi
+get i height hi
+resize i w (w/wi)*hi
+resize dice w (w/wi)*hi
+resize canvas w (w/wi)*hi
+opacity dice 50
+overlay canvas i 0 0
+overlay canvas dice 0 0
+huecurvergba canvas all 1 0 1
+render canvas
+}

@@ -1,0 +1,8 @@
+{iscript:
+load {iv} i
+hueshifthsv i 0 100 0
+copy i i2
+audiopitch i2 0.62996
+audioputmix i i2
+render i
+}

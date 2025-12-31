@@ -1,0 +1,20 @@
+{iscript:
+load {iv} i
+swaprgba i bgra
+invert i
+copy i i2
+copy i i3
+copy i i4
+audiopitch i 0.70711
+audiopitch i2 0.7937
+audiopitch i3 1.33484
+audiopitch i4 1.49831
+volume i 3
+volume i2 3
+volume i3 2
+volume i4 2
+audioputmix i i2
+audioputmix i i3
+audioputmix i i4
+render i
+}

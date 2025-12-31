@@ -1,0 +1,11 @@
+{iscript:
+load {iv} m
+get m width w
+get m height h
+copy m m2
+audiopitch m2 1.33
+audioputmix m m2
+create bg w h 255 255 255 100
+overlay bg m 0 0 #000000 0.1 0.1
+render bg
+}

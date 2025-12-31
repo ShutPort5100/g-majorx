@@ -1,0 +1,10 @@
+{iscript:
+load {iv} i
+huecurvergba i all 0.03 0.99475 0.73
+hueshifthsv i -13 250
+copy i i2
+audiopitch i2 1.360
+audioputmix i i2
+volume i2 2
+render i
+}

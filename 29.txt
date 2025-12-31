@@ -1,0 +1,24 @@
+{iscript:
+load {iv} m
+grayscale m
+blur m 1
+lighten m 5
+contrast m 2
+mirrorright m
+mirrorbottom m
+volume m 0.5
+copy m m2
+copy m m3
+copy m m4
+volume m 1.25
+audiopitch m 2
+audiopitch m 1.25
+audiopitch m2 0.74915
+audiopitch m3 0.8409
+audiopitch m4 0.625
+audioputmix m m4
+audioputmix m3 m2
+audioputmix m m3
+volume m 6
+render m
+}

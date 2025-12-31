@@ -1,0 +1,25 @@
+{iscript:
+load {iv} c
+swaprgba c bgra
+hueshifthsv c 100
+invert c
+mirrorleft c
+copy c c2
+copy c c3
+copy c c4
+copy c c5
+copy c c6
+copy c c7
+audiopitch c 0.62996
+audiopitch c2 0.70711
+audiopitch c3 0.74915
+audiopitch c4 0.8409
+audiopitch c6 1.12246
+audiopitch c7 1.33484
+audioputmix c c2
+audioputmix c c3
+audioputmix c c4
+audioputmix c c5
+audioputmix c c6
+audioputmix c c7
+}

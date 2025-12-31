@@ -1,0 +1,34 @@
+{iscript:
+load {iv} m
+get m width w
+get m height h
+offset m 85
+slide m 1 up
+rotate m 90
+waves m
+waves m 16 125  5
+waves m 5 200 10
+waves m 2.5 16 5.25
+waves m 5 50 10
+rotate m 270
+cover m w h
+grayscale m
+huecurvergba m red 0 0 0
+huecurvergba m green 1 0.5294 0.1372
+huecurvergba m blue 0 0 0
+darken m 4
+volume m 0.5
+copy m m2
+copy m m3
+copy m m4
+audiopitch m2 1.66667
+audiopitch m3 1.33
+audiopitch m4 0.66667
+audioputmix m m4
+audioputmix m3 m2
+audioputmix m m3
+volume m 6
+create bg w h 255 0 255 100
+overlay bg m 0 0 #000000 0.04 0.1
+render bg
+}

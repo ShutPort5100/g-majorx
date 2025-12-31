@@ -1,0 +1,11 @@
+{iscript:
+load {iv} i
+deepfry i
+hueshifthsv i 180
+invert i
+audiopitch i 2
+audiodestroy i
+copy i i2
+audiopitch i2 0.6299605249474366
+audioputmix i i2
+}

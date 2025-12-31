@@ -1,0 +1,25 @@
+{iscript:
+load {iv} i
+load https://cdn.discordapp.com/attachments/659858433486618674/1342807344173809715/ws.png dice
+get dice width w
+get dice height h
+get i width wi
+get i height hi
+rotate i 90
+waves i
+waves i 16 125  5
+waves i 5 200 10
+waves i 2.5 16 5.25
+waves i 5 50 10
+rotate i 270
+resize i w (w/wi)*hi
+resize dice w (w/wi)*hi
+opacity dice 50
+overlay i dice 0 0
+swaprgba i r00a
+copy i c2
+audiopitch c2 0.7071067811865475
+audioputmix i c2
+volume i 2
+cover i w (w/wi)*hi
+}

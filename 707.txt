@@ -1,0 +1,9 @@
+{iscript:
+load {iv} a
+hueshifthsv a 180
+audiopitch a 2
+copy a b
+audiopitch b 1.18921
+audioputmix a b
+audiodestroy a
+}

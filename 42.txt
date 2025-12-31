@@ -1,0 +1,18 @@
+{iscript:
+load {iv} 42
+hueshifthsvffmpeg 42 180
+invert 42
+swaprgba 42 bgra
+hueshifthsv 42 180
+copy 42 42a
+copy 42 42b
+copy 42 42c
+audiopitch 42a 0.8408964152537146
+audiopitch 42b 1.2599210498948732
+audiopitch 42c 1.4983070768766815
+audioputmix 42 42a
+audioputmix 42b 42c
+audioputmix 42 42b
+volume 42 2
+render 42
+}

@@ -1,0 +1,9 @@
+{iscript:
+load {iv} i
+flop i
+hueshifthsv i 209.88
+invert i
+copy i i2
+audiopitch i2 0.8474577404426058
+audioputmix i i2
+}

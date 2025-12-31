@@ -1,0 +1,27 @@
+{iscript:
+load {iv} m
+swaprgba m bgra
+get m width w
+get m height h
+copy m m2
+copy m m3
+copy m m4
+copy m m5
+audiopitch m 0.24
+audiopitch m2 0.304
+audiopitch m3 0.355
+audiopitch m4 0.412
+audiopitch m5 0.505
+volume m 3
+volume m2 2
+volume m3 2
+volume m4 2
+volume m5 2
+audioputmix m m2
+audioputmix m m3
+audioputmix m m4
+audioputmix m m5
+create bg w h 0 0 0 100
+overlay bg m 0 0 #ffffff 0.1 0.4
+render bg
+}

@@ -1,0 +1,10 @@
+{iscript:
+load {iv} m
+recolor m
+explode m
+mirrorright m
+copy m m2
+audiopitch m 1.165
+audiopitch m2 0.9355
+audioputmix m m2
+}

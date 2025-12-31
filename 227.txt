@@ -1,0 +1,24 @@
+{iscript:
+load {iv} i
+resize i 640 360
+invert i
+hueshifthsv i 122
+haah i
+woow i
+copy i i2
+audiopitch i 1.25
+audiopitch i2 1.50
+audioputmix i i2
+get i width w
+get i height h
+rotate i 90
+waves i
+waves i 16 125  5
+waves i 5 200 10
+waves i 2.5 16 5.25
+waves i 5 50 10
+rotate i 270
+cover i w h
+wave i 25 430
+render i
+}

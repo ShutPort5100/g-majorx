@@ -1,0 +1,7 @@
+{iscript:
+load {iv} a
+flop a
+invertrgba a 1 1 0 0
+speed a 1.41421
+audiopitch a 1.41421
+}

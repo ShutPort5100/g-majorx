@@ -1,0 +1,7 @@
+{iscript:
+load {iv} a
+hueshifthsv a 180
+invert a
+audiopitch a 2
+audiodestroy a
+}

@@ -1,0 +1,9 @@
+{iscript:
+load {iv} m
+copy m m2
+audiopitch m2 1.189207115002721066717499970560475915292972092463817413019002225
+overlay m m2
+volume m 2
+mirrorleft m
+swaprgba m bgra
+}

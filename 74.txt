@@ -1,0 +1,15 @@
+{iscript:
+load {iv} m
+hueshifthsv m 180
+invert m
+explode m 0.5
+copy m m2
+copy m m3
+audiopitch m 0.5
+audiopitch m2 1.4983070768766815
+audiopitch m3 2
+audioputmix m m2
+audioputmix m m3
+audiopitch m 1.122462048309373
+render m
+}

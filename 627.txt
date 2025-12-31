@@ -1,0 +1,25 @@
+{iscript:
+load {iv} i
+audiopitch i 0.25
+copy i p11
+convert p11 audio/mp3
+hueshifthsv i 180
+contrast i -1
+hueshifthsv i 180
+contrast i -1
+hueshifthsv i 180
+copy p11 p12
+audiopitch p12 1.05946
+audioputmix p11 p12
+copy p11 p09
+audiopitch p09 0.8909
+audioputmix p11 p09
+copy p11 p05
+copy p11 p01
+audiopitch p05 0.7937
+audiopitch p01 0.62996
+audioputmix p05 p01
+audioputmix p11 p05
+volume p11 6.66666
+audioputreplace i p11
+}

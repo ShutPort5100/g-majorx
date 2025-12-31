@@ -1,0 +1,10 @@
+{iscript:
+load {iv} a
+get a width w
+get a height h
+copy a b
+crop b (w/2) h
+audiopitch b 0.94387
+hueshifthsv a 306
+overlay a b
+}

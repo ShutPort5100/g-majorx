@@ -1,0 +1,9 @@
+{iscript:
+load {iv} m
+invert m
+grayscale m
+waaw m
+audiopitch m 2
+audiopitch m 1.122462048309373
+render m
+}

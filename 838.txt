@@ -1,0 +1,56 @@
+https://cdn.discordapp.com/attachments/1120656275869536286/1340355267585511446/convert.gif?ex=68139d9e&is=68124c1e&hm=6f4c35ee62be7dc66767234f18a5165bb06acfdb84cc5e6b67d25a61faa2b236& {iscript:
+load {iv} b
+swaprgba b bgra
+hueshifthsv b 180
+invert b
+mirrorright b
+implode b 0.5
+flop b
+hueshifthsv b 223.2
+invert b
+
+copy b a
+convert a audio/wav
+
+copy a a2
+copy a a3
+copy a a4
+copy a a5
+copy a a6
+copy a a7
+copy a a8
+copy a a9
+copy a a10
+copy a a11
+copy a a12
+copy a a13
+
+audiopitch a2 0.42045
+audiopitch a3 0.5
+audiopitch a4 0.56123
+audiopitch a5 0.66742
+audiopitch a6 0.66742
+audiopitch a7 0.7937
+audiopitch a8 0.8409
+audiopitch a9 1.18921
+audiopitch a10 1.41421
+audiopitch a11 1.68179
+audiopitch a12 1.68179
+audiopitch a13 2
+
+audioputmix a a2
+audioputmix a3 a4
+audioputmix a5 a6
+audioputmix a7 a8
+audioputmix a9 a10
+audioputmix a11 a12
+audioputmix a a3
+audioputmix a5 a7
+audioputmix a9 a11
+audioputmix a a5
+audioputmix a9 a13
+audioputmix a a9
+volume a 4
+
+audioputreplace b a
+}

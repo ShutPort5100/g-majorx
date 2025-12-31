@@ -1,0 +1,12 @@
+{iscript:
+load {iv} i
+grayscale i
+lighten i 1
+huecurvergba i red 1 0.5490 0.1607
+huecurvergba i green 1 0.5490 0.1607
+huecurvergba i blue 0 0 0
+darken i 1
+mirrorleft i
+mirrortop i
+audiopitch i 0.88496
+}

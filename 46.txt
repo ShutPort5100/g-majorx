@@ -1,0 +1,11 @@
+{iscript:
+load {iv} m
+get m width w
+get m height h
+hueshifthsv m 60
+invert m
+mirrorleft m
+waves m 12 160 8
+cover m w h
+audiopitch m 1.75439
+}

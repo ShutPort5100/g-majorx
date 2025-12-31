@@ -1,0 +1,35 @@
+Blame [John](<https://youtube.com/channel/{choose:UClBND0xdiJNjqY9QmyJdI3g|UClwgT6A9WekU4n6bgDJnQLg|UCgmgXAqiPx1sUtLV5tO5-Ow|UCrYZBoDZuW2RJHodVxYHPvA|UCq_np35BMcYmSPfNHC65fpw|UCtiAVbjETil8nFXNZFnFlwQ|UCtzidLL-HiDtLLjDZtGqFLg|UCpGel9SfbeOaCrBUkuW4Ysg}>) {iscript:
+load {iv} m
+get m width w
+get m height h
+swaprgba m bgra
+copy m a
+convert a audio/mp3
+volume a 0.2
+create i w h 0 0 0 100
+overlay i m 0 0 #ffffff 0.1 0.4
+hueshifthsv i 180 100
+rotate i 90
+waves i
+waves i 16 125  5
+waves i 5 200 10
+waves i 2.5 16 5.25
+waves i 5 50 10
+rotate i 270
+swirl i -100
+copy a a2
+copy a a3
+copy a a4
+copy a a5
+audiopitch a2 0.7937
+audiopitch a3 1.25992
+audiopitch a4 0.62996
+audiopitch a5 2
+audioputmix a a2
+audioputmix a3 a4
+audioputmix a a3
+audioputmix a a5
+volume a 5
+audioputreplace i a
+render i
+}

@@ -1,0 +1,36 @@
+{iscript:
+load {iv} m
+swaprgba m bgra
+hueshifthsv m 180
+invert m
+mirrorleft m
+copy m m2
+copy m m3
+copy m m4
+copy m m5
+copy m m6
+copy m m7
+audiopitch m 1
+audiopitch m2 1.4983070768766815
+audiopitch m3 2
+audiopitch m4  1.2599210498948732
+audiopitch m5 1
+audiopitch m6 0.7491535384383408
+audiopitch m7 0.5
+volume m3 3
+volume m 3
+volume m2 3
+volume m4 3
+audioputmix m m2
+audioputmix m m3
+audioputmix m m4
+audioputmix m m6
+audioputmix m m7
+copy m m8
+audiopitch m8 2
+audioputmix m m8
+copy m m9
+audiopitch m9 0.94387
+audioputmix m m9
+volume m 4
+}

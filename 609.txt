@@ -1,0 +1,12 @@
+{iscript:
+load {iv} m
+copy m m2
+audiopitch m2 1.40
+audioputmix m m2
+swaprgba m bgra
+invert m
+hueshifthsv m 52.92
+mirrorleft m
+recolor m
+render m
+}
