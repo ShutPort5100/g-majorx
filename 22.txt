@@ -15,5 +15,3 @@ h=$(ffprobe -v error -select_streams v:0 -show_entries stream=height -of default
 ffmpeg -stream_loop -1 -i "https://file.garden/aTXso15ukD3mnuPI/nbfx_earthquake.mp4" -vf fps=$fr,scale=$w:$h,setsar=1:1,vidstabdetect=shakiness=10:accuracy=1:mincontrast=0:show=0:result="newbluefx_earthquake.trf" -c:v h264 -preset ultrafast -t $d -f null -
 
 ffmpeg -i $FILE_1 {get:code} ./output/nbfx_earthquake.mp4}
-
-umb autotune=https://www.youtube.com/watch?v=52k-8nKko-M, pitch=-20, er=8
