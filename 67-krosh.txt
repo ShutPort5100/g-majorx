@@ -1,0 +1,29 @@
+Wait! 67... {iscript:
+load {iv} a
+get a width w
+get a height h
+hueshifthsv a 41.76
+rotate a 90
+wave a w/25 h/5
+rotate a 270
+cover a w h
+copy a b
+copy a c
+copy a d
+audiopitch a 0.5
+audiopitch b 0.94387
+audiopitch c 0.39685
+audiopitch d 1.18921
+audioputmix c d
+audioputmix a b
+audioputmix a c
+huecurvergba a all 1 0.32 0.26 0.3 0.34 0.41 0.48 0.54 0.62 0.69 0.77 0.85 0.93 1
+huecurvergba a blue 0 0.9 1
+create bg w h 255 211 26 255
+overlay a bg 0 0 none 0.01 1 true 50
+load https://cdn.discordapp.com/attachments/1302164115095027762/1325479129361023027/snip.mp4?ex=677bf022&is=677a9ea2&hm=048fd54763113d438dd4bc6989af1fd8eb105f2e4b06c06d17e5e817a7cdefb4& tc
+setframecount tc afc
+distort tc resize aw ah
+overlay a tc 0 0 #00ff00 0.3 0.2
+volume a 3.5
+}
