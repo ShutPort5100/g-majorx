@@ -1,17 +1,9 @@
-{set:code|-vf format=yuv444p,vidstabtransform=input="newbluefx_earthquake.trf":optalgo=avg:optzoom=0:zoom=15:invert=1,scale=iw:ih,format=yuv420p}
-{sh:load {iscripturl:
+umb autotune=https://www.youtube.com/watch?v=52k-8nKko-M, pitch=-20, er=8 {iscript:
 load {iv} m
+shake m 25 25 true
 invert m
 hueshifthsv m 180
+zoom m 1.175
 audioboostbass m
 render m
 }
-
-fr=$(ffprobe -v error -select_streams v:0 -show_entries stream=r_frame_rate -of default=nokey=1:noprint_wrappers=1 $FILE_1)
-d=$(ffprobe -i $FILE_1 -show_entries format=duration -v quiet -of csv="p=0")
-w=$(ffprobe -v error -select_streams v:0 -show_entries stream=width -of default=nw=1:nk=1 $FILE_1)
-h=$(ffprobe -v error -select_streams v:0 -show_entries stream=height -of default=nw=1:nk=1 $FILE_1)
- 
-ffmpeg -stream_loop -1 -i "https://file.garden/aTXso15ukD3mnuPI/nbfx_earthquake.mp4" -vf fps=$fr,scale=$w:$h,setsar=1:1,vidstabdetect=shakiness=10:accuracy=1:mincontrast=0:show=0:result="newbluefx_earthquake.trf" -c:v h264 -preset ultrafast -t $d -f null -
-
-ffmpeg -i $FILE_1 {get:code} ./output/nbfx_earthquake.mp4}
