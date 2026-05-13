@@ -1,0 +1,41 @@
+{iscript:
+load {iv} m
+hueshifthsv m 320
+invert m
+copy m m2
+copy m m3
+copy m m4
+copy m m5
+copy m m6
+copy m m7
+copy m m8
+copy m m9
+copy m m10
+copy m m11
+copy m m12
+copy m m13
+audiopitch m 0.5
+audiopitch m2 0.52973
+audiopitch m3 0.74915
+audiopitch m4  0.7937
+audiopitch m5 0.94387
+audiopitch m6 1
+audiopitch m7 1.18921
+audiopitch m8 1.25992
+audiopitch m9 1.41421
+audiopitch m10 1.88775
+audiopitch m11 2
+audioputmix m m2
+audioputmix m3 m4
+audioputmix m5 m6
+audioputmix m7 m8
+audioputmix m9 m10
+audioputmix m11 m12
+audioputmix m m3
+audioputmix m5 m7
+audioputmix m9 m11
+audioputmix m m5
+audioputmix m9 m13
+audioputmix m m9
+render m
+}
