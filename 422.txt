@@ -1,0 +1,19 @@
+{sh:
+load {iv}
+
+ffmpeg -i $FILE_1 audio.wav
+sox audio.wav audio1.wav pitch -q -3600
+sox audio1.wav audio2.wav pitch -q 3600
+ffmpeg -i $FILE_1 -i audio2.wav -map 0:v -map 1:a -shortest ./output/$(basename $FILE_1)}
+{iscript:
+load FILE_1 m
+swaprgba m bgra
+setfps m 31
+wiggle m right 10 4
+flop m
+wiggle m right 10 4
+flop m
+wiggle m up 10 4
+flip m
+wiggle m up 10 4
+flip m}
