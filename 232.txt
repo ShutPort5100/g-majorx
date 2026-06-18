@@ -1,0 +1,14 @@
+{iscript:
+load {iv} i
+flop i
+hueshifthsv i 130.32
+invert i
+volume i 0.333
+copy i i2
+copy i i3
+audiopitch i 0.625
+audiopitch i2 0.83333
+audiopitch i3 1.05263
+audioputmix i i2
+audioputmix i i3
+}
