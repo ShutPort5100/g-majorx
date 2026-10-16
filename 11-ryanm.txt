@@ -1,0 +1,16 @@
+{iscript:
+load {iv} a
+copy a b
+copy a c
+copy a d
+audiopitch b 1.49831
+audiopitch c 0.74915
+audiopitch d 0.8909
+audioputmix a b
+audioputmix c d
+audioputmix a c
+volume a 2.5
+huecurvergba a all {replace:Q| |{repeat:25|Q0}{repeat:75|Q1}}
+invert a
+hueshifthsvffmpeg a 225
+}
